@@ -16,5 +16,5 @@ jobs:
           github-token: ${{ secrets.AUTO_PROJECT }}
       - uses: actions/add-to-project@v0.1.0
         with:
-          project-url: https://github.com/orgs/yalla-coop/projects/2
+          project-url: https://github.com/orgs/yalla-coop/projects/24
           github-token: ${{ secrets.AUTO_PROJECT }}
