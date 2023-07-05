@@ -4,6 +4,7 @@ title: "Replace with Your Title"
 labels: [question, sla]
 assignees:
   - cyberteenie
+  - fadeomar
   - yalla-coop-sla
 body:
   - type: textarea
