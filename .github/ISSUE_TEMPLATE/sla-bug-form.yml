@@ -4,7 +4,6 @@ title: "Replace with Your Title"
 labels: [bug, sla]
 assignees:
   - yalla-coop-sla
-  - cyberteenie
   - RamyAlshurafa
 body:
   - type: dropdown
