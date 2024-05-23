@@ -4,7 +4,7 @@ title: "Replace with Your Title"
 labels: [question, sla]
 assignees:
   - yalla-coop-sla
-  - RamyAlshurafa
+  - AbdelhalimOJ
 body:
   - type: textarea
     attributes:
