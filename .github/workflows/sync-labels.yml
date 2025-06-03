@@ -1,0 +1,27 @@
+name: Sync GitHub Labels
+
+on:
+  workflow_dispatch:  # manual run only
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout label config
+        uses: actions/checkout@v4
+        with:
+          repository: yalla-coop/label-config
+          ref: main
+          path: label-config
+          token: ${{ secrets.PAT_FOR_LABEL_CONFIG }}
+
+      - name: Install github-label-sync
+        run: npm install -g github-label-sync
+
+      - name: Sync labels
+        run: |
+          github-label-sync \
+            --access-token "${{ secrets.GITHUB_TOKEN }}" \
+            --labels label-config/label-names.json \
+            ${{ github.repository }}
