@@ -1,3 +1,10 @@
+name: "🐞 SLA Bug Report"
+description: "File a bug/issue."
+title: "Replace with Your Title"
+labels: [bug, sla]
+assignees:
+  - yalla-coop-sla
+  - AbdelhalimOJ
 body:
   - type: dropdown
     id: priority
